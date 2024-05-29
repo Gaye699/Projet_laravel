@@ -1,123 +1,106 @@
-## **Laravel School Management System** 
+## **Système d'education en ligne avec Laravel**
 
-**LAVSMS** is developed for educational institutions like schools and colleges built on Laravel 8
+**L'app** est développé pour les établissements d'enseignement tels que les écoles et les collèges construits sur Laravel 8.
 
-**SCREENSHOTS** 
+**CAPTURES D'ÉCRAN**
 
-**Dashboard**
+**Tableau de bord**
 <img src="https://i.ibb.co/D4T0z6T/dashboard.png" alt="dashboard" border="0">
 
-**Login**
+**Se connecter**
 <img src="https://i.ibb.co/Rh1Bfwk/login.png" alt="login" border="0">
 
-**Student Marksheet**
+**Feuille de notes de l'étudiant**
 <img src="https://i.ibb.co/GCgv5ZR/marksheet.png" alt="marksheet" border="0">
 
-**System Settings**
+**Les paramètres du système**
 <img src="https://i.ibb.co/Kmrhw69/system-settings.png" alt="system-settings" border="0">
 
-**Print Marksheet**
-<div style="clear: both"> </div>
+**Imprimer la feuille de repères**
+<div style="clear: les deux"> </div>
 <img src="https://i.ibb.co/5c1GHCj/capture-20210530-115521-crop.png" alt="print-marksheet">
 
-**Print Tabulation Sheet & Marksheet**
+**Imprimer la feuille de tabulation et la feuille de marquage**
 <img src="https://i.ibb.co/QmscPfn/capture-20210530-115802.png" alt="tabulation-sheet" border="0">
 
-<hr />  
+<heure />
 
-There are 7 types of user accounts. They include:
- 
-Administrators (Super Admin & Admin)
-- Librarian
-- Accountant
-- Teacher
-- Student
+Il existe 7 types de comptes d'utilisateurs. Ils comprennent:
+
+Administrateurs (super administrateur et administrateur)
+- Bibliothécaire
+- Comptable
+- Professeur
+- Étudiant
 - Parent
 
-**Requirements** 
+**Exigences**
 
-Check Laravel 8 Requirements https://laravel.com/docs/8.x
+Vérifiez les exigences de Laravel 8 https://laravel.com/docs/8.x
 
 **Installation**
-- Install dependencies (composer install)
-- Set Database Credentials & App Settings in dotenv file (.env)
-- Migrate Database (php artisan migrate)
-- Database seed (php artisan db:seed)
+- Installer les dépendances (installation du compositeur)
+- Définir les informations d'identification de la base de données et les paramètres de l'application dans le fichier dotenv (.env)
+- Migrer la base de données (php artisan migrate)
+- Seed de la base de données (php artisan db:seed)
 
-**Login Credentials**
-After seeding. Login details as follows:
+**Identifiants de connexion**
+Après semis. Détails de connexion comme suit :
 
-| Account Type  | Username | Email | Password |
+| Type de compte | Nom d'utilisateur | Courriel | Mot de passe |
 | ------------- | -------- | ----- | -------- |
-| Super Admin | cj | cj@cj.com | cj |
-|  Admin | admin | admin@admin.com | cj |
-|  Teacher | teacher | teacher@teacher.com | cj |
-|  Parent | parent | parent@parent.com | cj |
-|  Accountant | accountant | accountant@accountant.com | cj |
-|  Student | student | student@student.com | cj |
+| Super administrateur | cj | cj@cj.com | cj |
+| Administrateur | administrateur | admin@admin.com | cj |
+| Enseignant | professeur | professeur@enseignant.com | cj |
+| Parents | parent | parent@parent.com | cj |
+| Comptable | comptable | comptable@accountant.com | cj |
+| Étudiant | étudiant | étudiant@étudiant.com | cj |
 
-#### **FUNCTIONS OF ACCOUNTS** 
+#### **FONCTIONS DES COMPTES**
 
-**-- SUPER ADMIN**
-- Only Super Admin can delete any record
-- Create any user account
- 
-**-- Administrators (Super Admin & Admin)**
+**-- SUPER ADMINISTRATEUR**
+- Seul le super administrateur peut supprimer n'importe quel enregistrement
+- Créez n'importe quel compte utilisateur
 
-- Manage students class/sections
-- View marksheet of students
-- Create, Edit and manage all user accounts & profiles
-- Create, Edit and manage Exams & Grades
-- Create, Edit and manage Subjects
-- Manage noticeboard of school
-- Notices are visible in calendar in dashboard
-- Edit system settings
-- Manage Payments & fees
+**-- Administrateurs (Super Administrateur et Administrateur)**
 
-**-- ACCOUNTANT**
-- Manage Payments & fees
-- Print Payment Receipts
+- Gérer les classes/sections des étudiants
+- Voir la feuille de notes des étudiants
+- Créer, modifier et gérer tous les comptes et profils d'utilisateurs
+- Créer, modifier et gérer des examens et des notes
+- Créer, modifier et gérer des sujets
+- Gérer le tableau d'affichage de l'école
+- Les avis sont visibles dans le calendrier du tableau de bord
+- Modifier les paramètres du système
+- Gérer les paiements et les frais
 
-**-- LIBRARIAN**
-- Manage Books in the Library
+**-- COMPTABLE**
+- Gérer les paiements et les frais
+- Imprimer les reçus de paiement
 
-**-- TEACHER**
-- Manage Own Class/Section
-- Manage Exam Records for own Subjects
-- Manage Timetable if Assigned as Class Teacher
-- Manage own profile
-- Upload Study Materials
+**-- BIBLIOTHÉCAIRE**
+- Gérer les livres dans la bibliothèque
 
-**-- STUDENT**
-- View teacher profile
-- View own class subjects
-- View own marks and class timetable
-- View Payments
-- View library and book status
-- View noticeboard and school events in calendar
-- Manage own profile
+**-- PROFESSEUR**
+- Gérer sa propre classe/section
+- Gérer les dossiers d'examen pour vos propres sujets
+- Gérer les horaires s'il est affecté en tant que professeur de classe
+- Gérer son propre profil
+- Télécharger du matériel d'étude
+
+**-- ÉTUDIANT**
+- Voir le profil de l'enseignant
+- Afficher ses propres matières de classe
+- Afficher vos propres notes et horaires de cours
+- Afficher les paiements
+- Afficher l'état de la bibliothèque et du livre
+- Afficher le tableau d'affichage et les événements scolaires dans le calendrier
+- Gérer son propre profil
 
 **-- PARENT**
-- View teacher profile
-- View own child's marksheet (Download/Print PDF)
-- View own child's Timetable
-- View own child's payments
-- View noticeboard and school events in calendar
-- Manage own profile
-
-### **Contributing**
-
-Your Contributions & suggestions are welcomed. Please use Pull Request
-
-### **Security Vulnerabilities**
-
-If you discover a security vulnerability within LAV_SMS, please send an e-mail to CJ Inspired via cjay.pub@gmail.com. All security vulnerabilities will be promptly addressed.
-
-***Please Note*** that some sections of this project are in the work-in-progress stage and would be updated soon. These include:
-
-- The Noticeboard/Calendar in the Dashboard Area
-- Librarian/Acountant user pages
-- Library Resources/Study Materials Upload for Students
-
-### **Contact [CJ INSPIRED]**
-- Phone : +2347068149559
+- Voir le profil de l'enseignant
+- Afficher la feuille de notes de votre enfant (Télécharger/Imprimer le PDF)
+- Afficher l'horaire de votre propre enfant
+- Afficher les paiements de votre propre enfant
+- Afficher le tableau d'affichage et les événements scolaires dans le calendrier
+- Gérer son propre profil
